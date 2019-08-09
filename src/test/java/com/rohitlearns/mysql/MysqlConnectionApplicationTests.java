@@ -12,6 +12,7 @@ public class MysqlConnectionApplicationTests {
 	@Test
 	public void contextLoads() {
 		System.out.println("in test");
+		System.out.println("Adding code to the branch");
 	}
 
 }
