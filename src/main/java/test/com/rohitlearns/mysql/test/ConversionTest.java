@@ -9,7 +9,7 @@ public class ConversionTest {
 
     @Test
     public void testTempConversion() {
-
+        System.out.println("checkin test");
         Conversion underTest = new Conversion();
         double temp = 80.0d;
         String unit = "";
