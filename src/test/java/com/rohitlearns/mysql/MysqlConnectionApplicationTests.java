@@ -11,6 +11,7 @@ public class MysqlConnectionApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("in test");
 	}
 
 }
