@@ -1,22 +1,29 @@
 package com.rohitlearns.mysql.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@ApiModel(description = "Details about the contact")
 @Entity
 @Table(name="TOPIC")
 public class Topic {
 
     @Id
     @Column(name = "id")
+    @ApiModelProperty(notes = "The Unique Id of the topic")
     private String id;
 
     @Column(name="name")
+    @ApiModelProperty(notes = "Name of the topic")
     private String name;
 
     @Column(name="description")
+    @ApiModelProperty(notes = "The Description of the topic.")
     private String description;
 
     public Topic() {
